@@ -1,10 +1,11 @@
-import { Shield, Sparkles } from "lucide-react";
+import { Shield, MessageCircle } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import { signInWithPopup } from "firebase/auth";
 import { auth, db } from "../../firebase";
 import { GoogleAuthProvider } from "firebase/auth";
 import { doc, setDoc } from "firebase/firestore";
 
+// Function to create a new user in the Firestore
 async function createUser(authData) {
   const { uid, photoURL, displayName, email } = authData.user;
   await setDoc(doc(db, "Users", uid), {
@@ -34,11 +35,11 @@ function Login() {
         {/* Header with dynamic gradient */}
         <div className="relative bg-gradient-to-r from-indigo-600 to-purple-500 p-8 text-center">
           <div className="flex justify-center items-center gap-3 animate-fade-in">
-            <Sparkles className="h-10 w-10 text-yellow-200" fill="currentColor" />
-            <h1 className="text-3xl font-bold text-white drop-shadow-md">SafeTalk</h1>
+            <MessageCircle className="h-10 w-10 text-yellow-200" fill="currentColor" />
+            <h1 className="text-3xl font-bold text-white drop-shadow-md">ChatFlow</h1>
           </div>
           <p className="text-white/90 mt-3">
-            Where conversations sparkle securely
+            Connect and chat with ease
           </p>
         </div>
 
@@ -72,11 +73,11 @@ function Login() {
 
       {/* Animated footer */}
       <div className="mt-10 text-xs text-indigo-400/80 flex gap-4 animate-pulse">
-        <span>New message animations</span>
+        <span>Instant messaging</span>
         <span>•</span>
-        <span>Custom themes</span>
+        <span>Custom notifications</span>
         <span>•</span>
-        <span>Realtime typing indicators</span>
+        <span>Secure chats</span>
       </div>
     </div>
   );

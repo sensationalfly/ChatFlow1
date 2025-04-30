@@ -1,8 +1,21 @@
-# React + Vite
+# 💬 ChatFlow
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**ChatFlow** is a modern messaging web app built using **React**, **Vite**, and **Tailwind CSS**. It offers a fast, responsive, and clean UI — perfect for real-time communication.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+
+- ⚡️ Fast performance with Vite
+- 🎨 Beautiful UI with Tailwind CSS
+- 💬 Real-time messaging interface
+- 🔐 Firebase Authentication (optional)
+- ☁️ Firebase Realtime Database or Firestore integration (optional)
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** React + Vite
+- **Styling:** Tailwind CSS
+- **Backend (optional):** Firebase (Auth, Firestore, Realtime DB)

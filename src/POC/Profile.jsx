@@ -1,4 +1,4 @@
-import { ArrowLeft, Check, Edit2, Loader2, LogOut } from 'lucide-react'
+import { ArrowLeft, Save, Edit2, Loader2, LogOut } from 'lucide-react'
 import React, { useState } from 'react'
 import { useAuth } from './AuthContext';
 import { auth } from '../../firebase';
@@ -75,9 +75,9 @@ function Profile(props) {
             />
             <button 
               onClick={() => updateName(name)}
-              className="absolute right-3 p-2 text-[#6366f1] hover:bg-[#6366f1]/10 rounded-full transition-colors"
+              className="absolute right-0 p-2 text-[#6366f1] hover:bg-[#6366f1]/10 rounded-full transition-colors"
             >
-              <Check size={20} />
+              <Save size={20} />
             </button>
           </div>
         </div>
@@ -94,9 +94,9 @@ function Profile(props) {
             />
             <button 
               onClick={() => updateStatus(status)}
-              className="absolute right-3 p-2 text-[#6366f1] hover:bg-[#6366f1]/10 rounded-full transition-colors"
+              className="absolute right-0 p-2 text-[#6366f1] hover:bg-[#6366f1]/10 rounded-full transition-colors"
             >
-              <Check size={20} />
+              <Save size={20} />
             </button>
           </div>
         </div>

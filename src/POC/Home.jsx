@@ -3,21 +3,21 @@ import ChatWindow from "./ChatWindow";
 
 function Home() {
   return (
-    <div className="flex h-screen w-full bg-gradient-to-br from-[#f6f5ff] to-[#f0efff]">
-      {/* Sidebar with subtle shadow */}
-      <div className="w-[300px] bg-white/95 border-r border-[#e0e7ff] shadow-sm">
-        <ChatPanel />
-      </div>
-
-      {/* Main chat area with delicate texture */}
-      <div 
-        className="flex-1 flex flex-col"
-        style={{
-          backgroundImage: 'radial-gradient(at top right, #e9d5ff20 0%, transparent 24%)',
-          backgroundColor: '#f9f9ff'
-        }}
-      >
-        <ChatWindow />
+    <div className="relative w-full h-screen bg-[#f5f3ff]">
+      {/* Background layer - modern alternative to your green header */}
+      <div className="absolute top-0 h-[180px] w-full bg-gradient-to-r from-[#6366f1] to-[#a855f7]" />
+      
+      {/* Content container */}
+      <div className="absolute top-5 left-5 right-5 bottom-5 flex rounded-xl overflow-hidden shadow-lg">
+        {/* Sidebar */}
+        <div className="w-[300px] bg-white">
+          <ChatPanel />
+        </div>
+        
+        {/* Main chat area */}
+        <div className="flex-1 bg-[#f9f9ff]">
+          <ChatWindow />
+        </div>
       </div>
     </div>
   );
